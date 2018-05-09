@@ -1,0 +1,11 @@
+doctype html
+html
+  head
+    title!= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    h1 #{title}
+    h2 Data
+    ul
+      each data in sensorData
+        li= data
